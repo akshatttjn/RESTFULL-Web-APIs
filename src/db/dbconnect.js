@@ -1,8 +1,14 @@
+const dotenv = require('dotenv');
+dotenv.config({ path: '../.env' });
+
 // Importing the Mongoose library for MongoDB connectivity
 const mongoose = require('mongoose');
 
+
+
+
 // Connecting to the MongoDB Atlas cluster using the provided connection string
-mongoose.connect("mongodb+srv://admin-akshat:Khandala-1@cluster0.ztou0.mongodb.net/olympics", {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,        // Use the new URL parser
     useUnifiedTopology: true     // Use the new server discovery and monitoring engine
 }).then(() => {
