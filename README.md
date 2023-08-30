@@ -35,12 +35,40 @@ This project demonstrates the implementation of a basic RESTful Web APIs using N
 The server will be running at http://localhost:3000.
 
 ## API Endpoints
-POST /mens/ - Create a new Olympics Ranking record
-GET /mens/ - Retrieve all Olympics Ranking records
-GET /mens/:id - Retrieve a specific Olympics Ranking record by ID
-PATCH /mens/:id - Update a specific Olympics Ranking record by ID
-PUT /mens/:id - Update a specific Olympics Ranking record by ID completely
-DELETE /mens/:id - Delete a specific Olympics Ranking record by ID
+
+The following endpoints are available for interacting with the Olympics Ranking records.
+
+### Create a New Record
+
+- **POST** `/mens/`
+  Create a new Olympics Ranking record.
+
+### Retrieve Records
+
+- **GET** `/mens/`
+  Retrieve all Olympics Ranking records.
+
+### Retrieve a Specific Record by ID
+
+- **GET** `/mens/:id`
+  Retrieve a specific Olympics Ranking record by its ID.
+
+### Update a Record (Partial Update)
+
+- **PATCH** `/mens/:id`
+  Update a specific Olympics Ranking record by its ID. This performs a partial update.
+
+### Update a Record (Full Update)
+
+- **PUT** `/mens/:id`
+  Update a specific Olympics Ranking record by its ID completely. This replaces the entire record.
+
+### Delete a Record
+
+- **DELETE** `/mens/:id`
+  Delete a specific Olympics Ranking record by its ID.
+
+
 
 ## Testing
 You can use tools like Postman to test the API endpoints. Import the provided Postman collection for easy testing.
