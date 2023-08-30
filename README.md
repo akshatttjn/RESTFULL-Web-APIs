@@ -7,7 +7,6 @@ This project demonstrates the implementation of a basic RESTful Web APIs using N
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
 
