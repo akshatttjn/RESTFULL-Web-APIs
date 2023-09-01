@@ -22,6 +22,7 @@ This project demonstrates the implementation of a basic RESTful Web APIs using N
 - Node.JS
 - Express
 - Mongoose
+- dotenv
 
 ## Installation
 
@@ -29,7 +30,10 @@ This project demonstrates the implementation of a basic RESTful Web APIs using N
    ```bash
    git clone https://github.com/your-username/your-project.git
    Install dependencies from requirements.txt file:
-   cd src
+   Create a .env file in the root directory of your project and add your MongoDB Atlas connection string like this:
+   MONGODB_URI=your_mongodb_connection_string_here
+
+   cd src                                   
    run app.js file to start the server
 
 The server will be running at http://localhost:3000.
